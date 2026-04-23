@@ -1,0 +1,107 @@
+name: Decision Log
+description: Record a product/architecture/UX/policy decision
+title: "[Decision] "
+labels: ["decision"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        All sections must be filled. If a section has no content, write `- N/A` (never leave blank).
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision / 決定事項
+      description: 1–2 lines, the conclusion in active voice
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / 背景
+      description: Why this decision became necessary
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered / 検討した選択肢
+      description: Other candidates compared against (write `- N/A` if solo option)
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale / 採用理由
+      description: Why the chosen option won
+    validations:
+      required: true
+  - type: textarea
+    id: tradeoffs
+    attributes:
+      label: Trade-offs / トレードオフ
+      description: What was sacrificed, future debt
+    validations:
+      required: true
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Consequences / 影響範囲
+      description: Ripple effects on code, ops, UX
+    validations:
+      required: true
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions / 前提
+      description: Conditions that would force a rethink if broken
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of scope / 対象外
+      description: What was deliberately not decided
+    validations:
+      required: true
+  - type: textarea
+    id: related
+    attributes:
+      label: Related / 関連
+      description: Links to other Issues, PRs, docs
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References / 参考資料
+      description: External URLs, docs, papers
+    validations:
+      required: true
+  - type: textarea
+    id: follow-ups
+    attributes:
+      label: Follow-ups / 次にやること
+      description: Derivative tasks
+    validations:
+      required: true
+  - type: textarea
+    id: open-questions
+    attributes:
+      label: Open questions / 未解決
+      description: Remaining ambiguities
+    validations:
+      required: true
+  - type: textarea
+    id: superseded-by
+    attributes:
+      label: Superseded by / 上書き関係
+      description: Link to later decision that overrides this (write `- N/A` initially)
+    validations:
+      required: true
+  - type: textarea
+    id: changelog
+    attributes:
+      label: Changelog / 変更履歴
+      description: Edits to this Issue itself, dated (write `- N/A` initially)
+    validations:
+      required: true
