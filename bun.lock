@@ -5,6 +5,7 @@
     "": {
       "name": "boswell",
       "devDependencies": {
+        "@perryts/perry": "^0.5.178",
         "@types/bun": "latest",
       },
       "peerDependencies": {
@@ -13,6 +14,22 @@
     },
   },
   "packages": {
+    "@perryts/perry": ["@perryts/perry@0.5.178", "", { "optionalDependencies": { "@perryts/perry-darwin-arm64": "0.5.178", "@perryts/perry-darwin-x64": "0.5.178", "@perryts/perry-linux-arm64": "0.5.178", "@perryts/perry-linux-arm64-musl": "0.5.178", "@perryts/perry-linux-x64": "0.5.178", "@perryts/perry-linux-x64-musl": "0.5.178", "@perryts/perry-win32-x64": "0.5.178" }, "bin": { "perry": "bin/perry.js" } }, "sha512-wiCf6o+lzvdWcnK/PCwo0vZX8x9pzhPoBOzAaWOa7EQ7naRvHFuzyxmRpwsrqCWMPpTTdM1VRG7OCKxgp7LXxg=="],
+
+    "@perryts/perry-darwin-arm64": ["@perryts/perry-darwin-arm64@0.5.178", "", { "os": "darwin", "cpu": "arm64" }, "sha512-rOcJEnHOsQtE2dJ5iJVZA6xUQp/1IqHd/d4Ch9AHLuoVef1dDjBmx2Bzy6qCx2BoP60SSySTfoIc8I8toQCbJA=="],
+
+    "@perryts/perry-darwin-x64": ["@perryts/perry-darwin-x64@0.5.178", "", { "os": "darwin", "cpu": "x64" }, "sha512-6W4MH83v587hcnp/hWIYO8aoyionP6k7hNV1+meDOJKGS+2eT/rNSP52X3kP31Grgw834ftEISCO+iT+kwCxXA=="],
+
+    "@perryts/perry-linux-arm64": ["@perryts/perry-linux-arm64@0.5.178", "", { "os": "linux", "cpu": "arm64" }, "sha512-CnETrJeulOo+0tovtR3H9bSUE9Vmpba8CNryBRvnU1noD2W7y8pFTA/Ha85Z5a0SmY+RFmn0UC8w1ZSlWC6SMA=="],
+
+    "@perryts/perry-linux-arm64-musl": ["@perryts/perry-linux-arm64-musl@0.5.178", "", { "os": "linux", "cpu": "arm64" }, "sha512-Zg0zpqjw9OliBkfYPayNhNew3N+OGDfU2/QrW7pLFpJZjdKLfT0FkOihZrj7RRoBJdwDFYG3X40jiIfVW8jxoQ=="],
+
+    "@perryts/perry-linux-x64": ["@perryts/perry-linux-x64@0.5.178", "", { "os": "linux", "cpu": "x64" }, "sha512-pCz5fjLpv2KquBa9ju1G+IZr2Gij+EYmLG0AbFK1wTUXPMYEWOapmpYNqH1CTxs6qQNx2XV2ixksiJVs5JAcgQ=="],
+
+    "@perryts/perry-linux-x64-musl": ["@perryts/perry-linux-x64-musl@0.5.178", "", { "os": "linux", "cpu": "x64" }, "sha512-Po+ojuI/CIh4IaN2aCcchpBgmvT+0HX2S4o5EVZ3nCd1ZyQiAvK3lQ0KvUt5LhkrRZqDU0Wl+fIveA7icyQz0Q=="],
+
+    "@perryts/perry-win32-x64": ["@perryts/perry-win32-x64@0.5.178", "", { "os": "win32", "cpu": "x64" }, "sha512-8jFRfaEa5dvA6N57olkJncW/LYotQaP6Zxjpjd+yRACQl9uNJVIMi51JRYpH44HZjLVb1DTSJwXQI+33dYYUoA=="],
+
     "@types/bun": ["@types/bun@1.3.13", "", { "dependencies": { "bun-types": "1.3.13" } }, "sha512-9fqXWk5YIHGGnUau9TEi+qdlTYDAnOj+xLCmSTwXfAIqXr2x4tytJb43E9uCvt09zJURKXwAtkoH4nLQfzeTXw=="],
 
     "@types/node": ["@types/node@25.6.0", "", { "dependencies": { "undici-types": "~7.19.0" } }, "sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ=="],

@@ -3,7 +3,16 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "build": "perry compile src/main.ts -o dist/myapp",
+    "dev": "perry run src/main.ts",
+    "check": "perry check src/",
+    "doctor": "perry doctor",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
   "devDependencies": {
+    "@perryts/perry": "^0.5.178",
     "@types/bun": "latest"
   },
   "peerDependencies": {
