@@ -1,7 +1,8 @@
 import { Hono } from "hono";
 import { vValidator } from "@hono/valibot-validator";
 import * as v from "valibot";
-import { VERSION } from "../../packages/shared/version.ts";
+
+const VERSION = "0.0.0";
 
 export const app = new Hono()
   .get("/version", (c) => c.json({ version: VERSION }))
