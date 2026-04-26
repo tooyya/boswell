@@ -4,21 +4,29 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build:backend": "perry compile src/backend/entry.ts -o dist/backend",
+    "build:backend": "bun build src/backend/entry.ts --target=bun --outdir=dist/backend",
     "build:app": "perry compile src/app/entry.ts -o dist/app",
     "build": "bun run build:backend && bun run build:app",
-    "dev:backend": "perry run src/backend/entry.ts",
+    "dev:backend": "bunx vercel dev",
+    "dev:backend:bun": "bun --hot src/backend/entry.ts",
     "dev:app": "perry run src/app/entry.ts",
-    "check": "perry check src/",
+    "deploy:backend": "bunx vercel deploy --prod",
+    "check": "perry check src/app/",
     "doctor": "perry doctor",
     "typecheck": "tsc --noEmit",
     "test": "bun test"
   },
   "devDependencies": {
     "@perryts/perry": "^0.5.178",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "vercel": "^52.0.0"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "@hono/valibot-validator": "^0.6.1",
+    "hono": "^4.12.15",
+    "valibot": "^1.3.1"
   }
 }
