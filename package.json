@@ -4,8 +4,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "perry compile src/main.ts -o dist/myapp",
-    "dev": "perry run src/main.ts",
+    "build:backend": "perry compile src/backend/entry.ts -o dist/backend",
+    "build:app": "perry compile src/app/entry.ts -o dist/app",
+    "build": "bun run build:backend && bun run build:app",
+    "dev:backend": "perry run src/backend/entry.ts",
+    "dev:app": "perry run src/app/entry.ts",
     "check": "perry check src/",
     "doctor": "perry doctor",
     "typecheck": "tsc --noEmit",
